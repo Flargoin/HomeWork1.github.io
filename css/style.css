@@ -1,0 +1,262 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.header{
+    position: fixed;
+    width: 100%;
+    background-color: #007765;
+    background-size: cover;
+
+    padding-top: 20px;
+    padding-bottom: 15px;
+    margin: 0 auto;
+}
+.container{
+   max-width: 1170px;
+   margin: 0 auto;
+   padding-left: 55px;
+   padding-right: 54px;
+}
+.header__inner{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.menu__list{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;   
+}
+.menu__list li{
+    list-style: none;
+}
+.menu__link{
+    text-decoration: none;
+    outline:none;
+    color:#fff;
+    padding-left: 8px;
+    padding-right: 8px;
+    font-family: Roboto;
+font-style: normal;
+font-weight: 500;
+font-size: 24px;
+line-height: 28px;
+text-align: center;
+}
+.menu__link{
+    border-left:1px solid #fff;
+    border-right:1px solid #fff;
+}
+.menu__link:first-child{
+    border-left:none;
+}
+.header__promo{
+  background-image: url(../img/image.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; 
+    color:#fff;
+    height: 250px;
+    text-align: center;
+    padding-top: 250px;
+
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 72px;
+    line-height: 84px;
+    text-align: center;
+    margin-bottom: 48px;
+}
+
+.title{
+    font-family: Roboto;
+font-style: normal;
+font-weight: 500;
+font-size: 64px;
+line-height: 75px;
+text-align: center;
+color: #007765;
+margin-bottom: 16px;
+}
+.problem__text{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 32px;
+    line-height: 37px;
+    color: #000000;
+}
+.problem__text{
+    margin: 0 auto;
+    margin-bottom: 70px;
+}
+.hero__bcg{
+    background-image: url(../img/Hero.jpg);
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: cover;    
+font-family: Roboto;
+font-style: italic;
+font-weight: 500;
+font-size: 48px;
+line-height: 56px;
+text-align: center;
+
+color: #FFFFFF;
+padding: 130px 163px;
+}
+.the__problem{
+    margin-bottom: 48px;
+}
+.Introducing__title{
+    margin-bottom: 16px;
+}
+.Introducing-inner{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.introducing__descr{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 32px;
+    line-height: 37px;
+    max-width: 930px;
+    color: #000000;
+    margin-bottom: 40px;
+}
+.introducing__text{
+    font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 32px;
+line-height: 37px;
+max-width: 1110px;
+color: #000000;
+margin-bottom: 40px;
+}
+.the__team{
+    background-color: #EEEEEE;
+}
+.team__title{
+    padding-top: 48px;
+    margin-bottom: 32px;
+}
+.members{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.member{
+    text-align: center;
+    flex-basis: 33%;
+    margin-bottom: 58px;
+}
+.member-name{
+    font-family: Roboto;
+font-style: normal;
+font-weight: bold;
+font-size: 24px;
+line-height: 28px;
+text-align: center;
+color: #007765;
+}
+.member-role{  
+font-family: Roboto;
+font-style: italic;
+font-weight: normal;
+font-size: 18px;
+line-height: 21px;
+color: #000000;
+}
+.footer{
+    background-color: #333333;
+}
+.footer__text{
+    padding: 48px 340px;
+    text-align: center;
+    color: #fff;
+
+    font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 18px;
+line-height: 21px;
+text-align: center;
+
+}
+
+@media (max-width:992px){
+    .container{
+        padding: 0px 10px;
+    }
+    .title{
+        font-size: 50px;
+    }
+    .hero__bcg{
+        font-size: 35px;
+        padding: 130px 80px;
+    }
+    .footer__text{
+        padding: 48px 200px;
+    }
+    .introducing__img{
+        display: none;
+    }
+}
+@media (max-width:750px){
+.menu__link{
+        display:none;
+    }
+}
+@media (max-width:750px){
+    .hero__bcg {
+        font-size: 25px;
+        padding: 95px 0;
+    }
+    .problem__text{
+        font-size: 28px;
+    }
+    .member{
+        flex-basis: 49%;
+    }
+    .introducing__descr{
+        font-size: 28px;
+    }
+    .introducing__text{
+        font-size: 28px;
+    }
+    .footer__text {
+        padding: 48px 75px;
+    }
+}
+
+@media (max-width:480px){
+    .header__promo{
+        font-size: 50px;
+        padding-top: 180px;
+    }
+    .title {
+        font-size: 35px;
+    }
+    .footer__text{
+        padding: 40px 35px;
+    }
+    .problem__text{
+        font-size: 24px;
+    }
+    .member{
+        flex-basis: 99%;
+    }
+    .hero__bcg {
+        font-size: 19px;
+        line-height: 40px;
+    }
+}
